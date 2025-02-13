@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table id="app" border="1" style="width:100%; text-align: center;">
+        <tr v-for="(item, index) in Products">
+            <td>{{index+1}}</td>
+            <td>
+                <img v-bind:src=item.img style="width: 100px">
+            </td>
+            <td>{{item.name}}</td>
+            <td>{{item.quontaty}}</td>
+            <td>{{item.price}}</td>
+        </tr>
+    </table>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
